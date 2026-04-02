@@ -12,6 +12,10 @@ export default {
         brandOrange: '#D75656',
         brandMagenta: '#BD114A',
       },
+      fontFamily: {
+        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+        display: ['Centive', 'cursive'],
+      },
     },
   },
   plugins: [],

@@ -148,7 +148,7 @@ function App() {
         layout
         className="w-full max-w-2xl text-center mb-10 z-10"
       >
-        <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-brandMagenta drop-shadow-sm">
+        <h1 style={{ fontFamily: '"Centive", cursive' }} className="text-5xl md:text-7xl mb-4 text-brandMagenta drop-shadow-md">
           Chest Piece Picker <motion.span className="inline-block" animate={{ rotate: [0, 10, -10, 0] }} transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}>🍗</motion.span>
         </h1>
         <p className="text-zinc-600 text-lg font-semibold tracking-wide uppercase">Who gets the holy grail of the chicken?</p>
