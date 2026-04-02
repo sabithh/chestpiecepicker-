@@ -145,23 +145,34 @@ function App() {
       <div ref={vantaRef} className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
 
       <motion.header 
-        layout
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
         className="w-full max-w-2xl text-center mb-10 z-10"
       >
         <h1 style={{ fontFamily: '"Centive", cursive' }} className="text-5xl md:text-7xl mb-4 text-brandMagenta drop-shadow-md">
-          Chest Piece Picker <motion.span className="inline-block" animate={{ rotate: [0, 10, -10, 0] }} transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}>🍗</motion.span>
+          <motion.span initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.5, type: "spring" }} className="inline-block">Chest Piece Picker</motion.span>
+          {' '}
+          <motion.span className="inline-block origin-bottom" initial={{ opacity: 0, scale: 0, rotate: -45 }} animate={{ opacity: 1, scale: 1, rotate: [0, 15, -10, 0] }} transition={{ opacity: { delay: 0.5 }, scale: { delay: 0.5, type: "spring" }, rotate: { delay: 1.5, repeat: Infinity, duration: 2, ease: "easeInOut" } }}>🍗</motion.span>
         </h1>
-        <p className="text-zinc-600 text-lg font-semibold tracking-wide uppercase">Who gets the holy grail of the chicken?</p>
+        <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8, duration: 0.8 }}
+          className="text-zinc-600 text-lg font-semibold tracking-wide uppercase"
+        >
+          Who gets the holy grail of the chicken?
+        </motion.p>
       </motion.header>
 
       <AnimatePresence mode="wait">
         {phase === 'input' && (
           <motion.div
             key="input-phase"
-            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            initial={{ opacity: 0, scale: 0.95, y: 40 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, y: -40, scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 300, damping: 25 }}
+            transition={{ type: "spring", stiffness: 300, damping: 25, delay: 0.7 }}
             className="w-full max-w-xl bg-white/80 backdrop-blur-xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] rounded-3xl p-8 md:p-10 space-y-8 border border-white/50 z-10 relative overflow-hidden"
           >
             {/* Inner decorative accent */}
