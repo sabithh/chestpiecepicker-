@@ -1,4 +1,4 @@
-﻿import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shuffle, Info, Crown, Award, RotateCcw } from 'lucide-react';
 import confetti from 'canvas-confetti';
@@ -151,7 +151,7 @@ function App() {
         className="w-full max-w-2xl text-center mb-10 z-10"
       >
         <h1 style={{ fontFamily: '"Centive", cursive' }} className="text-5xl md:text-7xl mb-4 text-brandMagenta drop-shadow-md">
-          <motion.span initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.5, type: "spring" }} className="inline-block">Chest Piece Picker</motion.span>
+          <motion.span initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.5, type: "spring" }} className="inline-block">Chest Piece Plucker</motion.span>
           {' '}
           <motion.span className="inline-block origin-bottom" initial={{ opacity: 0, scale: 0, rotate: -45 }} animate={{ opacity: 1, scale: 1, rotate: [0, 15, -10, 0] }} transition={{ opacity: { delay: 0.5 }, scale: { delay: 0.5, type: "spring" }, rotate: { delay: 1.5, repeat: Infinity, duration: 2, ease: "easeInOut" } }}>🍗</motion.span>
         </h1>
