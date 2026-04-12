@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "chestpiecepicker.vercel.app"
+        }
+      ],
+      "destination": "https://chestpieceplucker.app/$1",
+      "permanent": true
+    }
+  ]
+}
