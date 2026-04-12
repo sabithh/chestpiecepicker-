@@ -161,7 +161,7 @@ function App() {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="text-zinc-600 text-lg font-semibold tracking-wide uppercase"
         >
-          Who gets the holy grail of the chicken?
+          Who gets the holy grail of the chicken? <span className="hidden">The ultimate chest piece picker randomizer.</span>
         </motion.p>
       </motion.header>
 
