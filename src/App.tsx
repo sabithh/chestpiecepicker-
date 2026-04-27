@@ -148,10 +148,10 @@ function App() {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
-        className="w-full max-w-2xl text-center mb-10 z-10"
+        className="w-full max-w-3xl text-center mb-10 z-10"
       >
-        <h1 style={{ fontFamily: '"Centive", cursive' }} className="text-5xl md:text-7xl mb-4 text-brandMagenta drop-shadow-md">
-          <motion.span initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.5, type: "spring" }} className="inline-block">Chest Piece Plucker</motion.span>
+        <h1 style={{ fontFamily: '"Centive", cursive' }} className="text-4xl md:text-6xl mb-4 text-brandMagenta drop-shadow-md">
+          <motion.span initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.5, type: "spring" }} className="inline-block">Chest Piece Picker / Plucker</motion.span>
           {' '}
           <motion.span className="inline-block origin-bottom" initial={{ opacity: 0, scale: 0, rotate: -45 }} animate={{ opacity: 1, scale: 1, rotate: [0, 15, -10, 0] }} transition={{ opacity: { delay: 0.5 }, scale: { delay: 0.5, type: "spring" }, rotate: { delay: 1.5, repeat: Infinity, duration: 2, ease: "easeInOut" } }}>🍗</motion.span>
         </h1>
@@ -161,7 +161,7 @@ function App() {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="text-zinc-600 text-lg font-semibold tracking-wide uppercase"
         >
-          Who gets the holy grail of the chicken? <span className="hidden">The ultimate chest piece picker randomizer.</span>
+          Who gets the holy grail of the chicken? <span className="hidden">The ultimate chest piece picker and chest piece plucker randomizer.</span>
         </motion.p>
       </motion.header>
 
